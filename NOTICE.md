@@ -1,6 +1,6 @@
 # Media Attribution & License
 
-The exercise **media** (thumbnail images and animation GIFs) in this repository
+The exercise **media** (thumbnail images and WebP animations) in this repository
 is the property of **Gym visual** and is redistributed here **with permission**.
 
 > **© Gym visual — https://gymvisual.com/**
