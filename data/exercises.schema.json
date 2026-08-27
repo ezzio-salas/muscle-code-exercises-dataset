@@ -122,8 +122,8 @@
         },
         "gif_url": {
           "type": "string",
-          "description": "Path to the 180x180 animation GIF (e.g. \"videos/0001-2gPfomN.gif\").",
-          "pattern": "^videos/.+\\.gif$"
+          "description": "Path to the 180x180 animation (WebP, e.g. \"videos/0001-2gPfomN.webp\").",
+          "pattern": "^videos/.+\\.webp$"
         },
         "attribution": {
           "type": "string",

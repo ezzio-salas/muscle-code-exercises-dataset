@@ -3,18 +3,18 @@
 # 💪 Exercises Dataset
 
 <p>
-  <img src="videos/0025-EIeI8Vf.gif" width="120" alt="barbell bench press" />
-  <img src="videos/0043-qXTaZnJ.gif" width="120" alt="barbell full squat" />
-  <img src="videos/0032-ila4NZS.gif" width="120" alt="barbell deadlift" />
-  <img src="videos/0652-lBDjFxJ.gif" width="120" alt="pull-up" />
-  <img src="videos/0294-NbVPDMW.gif" width="120" alt="dumbbell biceps curl" />
-  <img src="videos/0334-DsgkuIt.gif" width="120" alt="dumbbell lateral raise" />
+  <img src="videos/0025-EIeI8Vf.webp" width="120" alt="barbell bench press" />
+  <img src="videos/0043-qXTaZnJ.webp" width="120" alt="barbell full squat" />
+  <img src="videos/0032-ila4NZS.webp" width="120" alt="barbell deadlift" />
+  <img src="videos/0652-lBDjFxJ.webp" width="120" alt="pull-up" />
+  <img src="videos/0294-NbVPDMW.webp" width="120" alt="dumbbell biceps curl" />
+  <img src="videos/0334-DsgkuIt.webp" width="120" alt="dumbbell lateral raise" />
 </p>
 
-**A comprehensive, ready-to-use fitness exercise dataset with 1,324 exercises — each with an animation GIF, 180×180 thumbnail image, category, body-part, equipment, target and muscle-group data, and step-by-step instructions in 10 languages (English, Spanish, Italian, Turkish, Russian, Chinese, Hindi, Polish, Korean, French).**
+**A comprehensive, ready-to-use fitness exercise dataset with 1,324 exercises — each with a WebP animation, 180×180 thumbnail image, category, body-part, equipment, target and muscle-group data, and step-by-step instructions in 10 languages (English, Spanish, Italian, Turkish, Russian, Chinese, Hindi, Polish, Korean, French).**
 
 [![Exercises](https://img.shields.io/badge/Exercises-1324-blue?style=flat-square)](data/exercises.json)
-[![Animation GIFs](https://img.shields.io/badge/Animation%20GIFs-1324-brightgreen?style=flat-square)](videos/)
+[![Animations](https://img.shields.io/badge/Animations-1324-brightgreen?style=flat-square)](videos/)
 [![Thumbnails](https://img.shields.io/badge/Thumbnails-1324-orange?style=flat-square)](images/)
 [![Languages](https://img.shields.io/badge/Languages-10-green?style=flat-square)](#-overview)
 [![Mobile App](https://img.shields.io/badge/App-LogPress-111111?style=flat-square&logo=react)](https://github.com/hasaneyldrm/logpress-public)
@@ -31,7 +31,7 @@
 **This repository provides:**
 
 - 1,324 exercises with category, body-part, equipment, target and muscle-group data
-- an animation GIF + 180×180 thumbnail for every exercise (media © [Gym visual](https://gymvisual.com/) — see [License](#-license--use))
+- a WebP animation + 180×180 thumbnail for every exercise (media © [Gym visual](https://gymvisual.com/) — see [License](#-license--use))
 - step-by-step instructions in 10 languages (🇬🇧 English, 🇪🇸 Spanish, 🇮🇹 Italian, 🇹🇷 Turkish, 🇷🇺 Russian, 🇨🇳 Chinese, 🇮🇳 Hindi, 🇵🇱 Polish, 🇰🇷 Korean, 🇫🇷 French)
 - the interactive browser (`index.html`) and developer setup guide (`setup.html`)
 
@@ -72,7 +72,7 @@ Each exercise entry contains:
 | Equipment | Equipment required (or `body weight` for bodyweight) |
 | Instructions | Step-by-step instructions for each exercise |
 | Available Languages | 🇬🇧 English · 🇪🇸 Spanish · 🇮🇹 Italian · 🇹🇷 Turkish · 🇷🇺 Russian · 🇨🇳 Chinese · 🇮🇳 Hindi · 🇵🇱 Polish · 🇰🇷 Korean · 🇫🇷 French |
-| Media | 180×180 thumbnail (`image`) + animation GIF (`gif_url`) per exercise — media © Gym visual, see [License](#-license--use) |
+| Media | 180×180 thumbnail (`image`) + WebP animation (`gif_url`) per exercise — media © Gym visual, see [License](#-license--use) |
 
 ---
 
@@ -80,7 +80,7 @@ Each exercise entry contains:
 
 This repository includes two ready-to-use HTML tools — no server required, just open in a browser.
 
-> **Note:** the browser displays each exercise's 180×180 thumbnail and animation GIF alongside its metadata and instructions.
+> **Note:** the browser displays each exercise's 180×180 thumbnail and WebP animation alongside its metadata and instructions.
 
 ### `index.html` — Exercise Browser
 
@@ -108,7 +108,7 @@ exercises-dataset/
 │   ├── exercises.json        # Full dataset — 1,324 exercise records (JSON array)
 │   └── exercises.schema.json # JSON Schema (2020-12) describing every record
 ├── images/                  # 1,324 × 180×180 thumbnails  (© Gym visual)
-├── videos/                  # 1,324 × 180×180 animation GIFs  (© Gym visual)
+├── videos/                  # 1,324 × 180×180 animation WebPs  (© Gym visual)
 ├── index.html               # Interactive exercise browser (client-side, no server needed)
 ├── setup.html               # Developer setup guide (DB import + API integration)
 ├── NOTICE.md                # Media attribution & license terms
@@ -119,7 +119,7 @@ exercises-dataset/
 
 - **`data/exercises.json`** — The primary data file. A JSON array of 1,324 exercise objects with all metadata. `image` / `gif_url` point to the local 180×180 assets, and each record carries an `attribution` field; `media_id` holds the original media reference id.
 - **`data/exercises.schema.json`** — A [JSON Schema](https://json-schema.org/) (Draft 2020-12) that formally describes every field, its type and constraints. Use it to validate the dataset or your own additions with any standard JSON Schema validator.
-- **`images/`, `videos/`** — 180×180 thumbnails and animation GIFs (© [Gym visual](https://gymvisual.com/), used with permission).
+- **`images/`, `videos/`** — 180×180 thumbnails and animation WebPs (© [Gym visual](https://gymvisual.com/), used with permission).
 - **`index.html`** — Standalone exercise browser. Open directly in any modern browser.
 - **`setup.html`** — Developer guide for DB setup, API integration, and LLM-assisted backend generation.
 - **`LICENSE`, `NOTICE.md`** — MIT (code/data) + the Gym visual media terms.
@@ -196,7 +196,7 @@ Each record in `data/exercises.json` follows this structure. A machine-readable 
 | `target` | `string` | Primary target muscle (e.g. `"biceps"`, `"pectoralis major"`) |
 | `media_id` | `string` | Original media reference id (e.g. `"2gPfomN"`) |
 | `image` | `string` | Path to the 180×180 thumbnail (e.g. `"images/0001-2gPfomN.jpg"`) |
-| `gif_url` | `string` | Path to the 180×180 animation GIF (e.g. `"videos/0001-2gPfomN.gif"`) |
+| `gif_url` | `string` | Path to the 180×180 WebP animation (e.g. `"videos/0001-2gPfomN.webp"`) |
 | `attribution` | `string` | Media copyright notice — `"© Gym visual — https://gymvisual.com/"` |
 | `created_at` | `string` | ISO 8601 timestamp of record creation |
 
@@ -226,7 +226,7 @@ Each record in `data/exercises.json` follows this structure. A machine-readable 
   "target": "abs",
   "media_id": "2gPfomN",
   "image": "images/0001-2gPfomN.jpg",
-  "gif_url": "videos/0001-2gPfomN.gif",
+  "gif_url": "videos/0001-2gPfomN.webp",
   "attribution": "© Gym visual — https://gymvisual.com/",
   "created_at": "2026-03-18T12:31:32.854798+00:00"
 }
@@ -236,11 +236,11 @@ Each record in `data/exercises.json` follows this structure. A machine-readable 
 
 ## 🎬 Sample Exercises
 
-> Each example ships a 180×180 thumbnail (`image`) and animation GIF (`gif_url`), © [Gym visual](https://gymvisual.com/).
+> Each example ships a 180×180 thumbnail (`image`) and WebP animation (`gif_url`), © [Gym visual](https://gymvisual.com/).
 
 ### 1 — Barbell Bench Press · Chest
 
-<img src="videos/0025-EIeI8Vf.gif" width="150" align="right" alt="Barbell Bench Press" />
+<img src="videos/0025-EIeI8Vf.webp" width="150" align="right" alt="Barbell Bench Press" />
 
 > **Equipment:** Barbell · **Target:** Pectorals · **Secondary:** Triceps, Shoulders · **Media ID:** `EIeI8Vf`
 
@@ -250,7 +250,7 @@ The Barbell Bench Press is the cornerstone of chest training and one of the "Big
 
 ### 2 — Barbell Deadlift · Upper Legs / Back
 
-<img src="videos/0032-ila4NZS.gif" width="150" align="right" alt="Barbell Deadlift" />
+<img src="videos/0032-ila4NZS.webp" width="150" align="right" alt="Barbell Deadlift" />
 
 > **Equipment:** Barbell · **Target:** Glutes · **Secondary:** Hamstrings, Lower Back · **Media ID:** `ila4NZS`
 
@@ -260,7 +260,7 @@ The Barbell Deadlift is widely regarded as the ultimate full-body strength exerc
 
 ### 3 — Barbell Full Squat · Upper Legs
 
-<img src="videos/0043-qXTaZnJ.gif" width="150" align="right" alt="Barbell Full Squat" />
+<img src="videos/0043-qXTaZnJ.webp" width="150" align="right" alt="Barbell Full Squat" />
 
 > **Equipment:** Barbell · **Target:** Glutes · **Secondary:** Quadriceps, Hamstrings, Calves, Core · **Media ID:** `qXTaZnJ`
 
@@ -270,7 +270,7 @@ Often called "the king of all exercises," the Barbell Full Squat demands coordin
 
 ### 4 — Dumbbell Biceps Curl · Upper Arms
 
-<img src="videos/0294-NbVPDMW.gif" width="150" align="right" alt="Dumbbell Biceps Curl" />
+<img src="videos/0294-NbVPDMW.webp" width="150" align="right" alt="Dumbbell Biceps Curl" />
 
 > **Equipment:** Dumbbell · **Target:** Biceps · **Secondary:** Forearms · **Media ID:** `NbVPDMW`
 
@@ -280,7 +280,7 @@ The Dumbbell Biceps Curl is the most recognized isolation exercise for the arms.
 
 ### 5 — Pull-up · Back
 
-<img src="videos/0652-lBDjFxJ.gif" width="150" align="right" alt="Pull-up" />
+<img src="videos/0652-lBDjFxJ.webp" width="150" align="right" alt="Pull-up" />
 
 > **Equipment:** Body Weight · **Target:** Lats · **Secondary:** Biceps, Forearms · **Media ID:** `lBDjFxJ`
 
@@ -290,7 +290,7 @@ The Pull-up is the gold standard bodyweight exercise for upper body pulling stre
 
 ### 6 — Dumbbell Lateral Raise · Shoulders
 
-<img src="videos/0334-DsgkuIt.gif" width="150" align="right" alt="Dumbbell Lateral Raise" />
+<img src="videos/0334-DsgkuIt.webp" width="150" align="right" alt="Dumbbell Lateral Raise" />
 
 > **Equipment:** Dumbbell · **Target:** Delts · **Secondary:** Traps · **Media ID:** `DsgkuIt`
 
@@ -449,5 +449,5 @@ console.log("First 6 exercises:", randomWorkout.map(e => e.name));
 This repository is a **developer setup wizard and structured exercise dataset** — exercise metadata, multilingual instruction translations, and 180×180 exercise media.
 
 - **Code, tooling, dataset structure, and instruction text** are released under the [MIT License](LICENSE).
-- **Exercise media (images & GIFs) is © [Gym visual](https://gymvisual.com/)** and redistributed here **with permission**, at 180×180 resolution — see [`NOTICE.md`](NOTICE.md) and the media exception in [`LICENSE`](LICENSE). Keep the `© Gym visual — https://gymvisual.com/` attribution intact. Reuse is governed by [Gym visual's Terms & Conditions](https://gymvisual.com/content/3-terms-and-conditions-of-use); obtain your own license there before reusing the media.
+- **Exercise media (images & WebP animations) is © [Gym visual](https://gymvisual.com/)** and redistributed here **with permission**, at 180×180 resolution — see [`NOTICE.md`](NOTICE.md) and the media exception in [`LICENSE`](LICENSE). Keep the `© Gym visual — https://gymvisual.com/` attribution intact. Reuse is governed by [Gym visual's Terms & Conditions](https://gymvisual.com/content/3-terms-and-conditions-of-use); obtain your own license there before reusing the media.
 - This repository does **not** claim ownership of the underlying exercise content or media.
